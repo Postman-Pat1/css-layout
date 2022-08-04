@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=roboto:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: Roboto,Arial,sans-serif;
+}
+#navBar{
+	display: flex;
+	height: 70px;
+	 position: fixed;
+	  width: 100%;
+	 justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	margin-top: -10px;
+	width: 100%;
+    z-index: 2;
+    background: hsla(0,0%,100%,.98);
+    box-shadow: 0 -2px 10px 0 rgb(0 0 0 / 15%);	
+}
+
+.logoDocplanner{
+	margin-left: 180px;
+	 width: 260px;
+	 height: 33px;
+}
+
+#navLinks{
+	justify-content: space-between;
+	width: 260px;
+	display: flex;
+	margin-right: 200px;
+	list-style: none;
+}
+#navLinks a{
+	text-decoration: none;
+	color: #ABABAB;
+	font-size: 15px;
+	font-weight: 400px;
+}
+
+#navLinks a:hover{
+	color: #01B39B;
+}
+
+.dropbtn {
+ 	text-decoration: none;
+	color: #ABABAB;
+	font-size: 15px;
+	font-weight: 400px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   left:-115px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #01B39B;}
+
+.logo-docplanner{
+	justify-content: center;
+	margin-left: 670px;
+	margin-top: 100px;
+}
+
+.Fmain h1{
+	text-align: center;
+	font-size: 2.125rem;
+    color: #00b39b;
+	margin: 1em 0;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    font-weight: lighter;
+    letter-spacing: -.3px;
+
+}
+
+.grid{
+	float: left;
+    width: 73%;
+    margin: 1%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-left: 180px; 
+}
+
+
+.paragraphs{
+	padding-left: 15px;
+	font-weight: 400;
+    font-family: Roboto,Arial,sans-serif;
+    color: #747474;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 500;
+    align-items: left;
+}
+
+.services {
+    margin: 3.75rem auto 2.5rem;
+}
+
+.col-3 {
+    width: 33.33%;
+
+}
+[class*=col-] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+     font-family: Work Sans,Arial,sans-serif;
+    font-weight: 100;
+}
+
+.services__item {
+    padding: 1.375em 1.25em 0;
+}
+
+.services__item {
+    border-radius: 10px;
+    padding: 2em 2em 0;
+    overflow: hidden;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .2s ease 0s;
+}
+
+.services__item--marketplace {
+    background: #00ccb1;
+}
+
+.services__item img {
+    margin-bottom: -0.4em;
+}
+
+.services__item h1 {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0.3em 0;
+}
+
+.services__item h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    color: #fff;
+}
+
+.services .style-select:last-child {
+    margin-bottom: 35px;
+}
+
+.services .style-select {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    background: none;
+    border: 0;
+    color: #fff;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: .04em;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.services .style-select select option {
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #333;
+}
+
+.services .style-select select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0 2em 0 0;
+    outline: 0;
+    text-transform: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.services__item--saas {
+    background: #3d83df;
+}
+
+.services__item--clinics {
+    background: #1b2734;
+}
+
+.brands {
+    margin: 2.5rem auto 3.125rem;
+  
+    max-width: 1015px;
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.brands h1 {
+    float: left;
+    width: 30%;
+    font-size: 1.625em;
+    margin: 0.25em 0 0.35em;
+    padding-right: 1em;
+        color: #00b39b;
+            font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -.3px;
+    display: block;
+    padding-left: 30px;
+}
+
+.brands__logos {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0;
+    list-style: none;
+    width: 67%;
+}
+
+.brands__logos li {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 0;
+    padding: 5px 0 5px 5px;
+    width: auto;
+}
+
+.stats {
+    background: #e5faf8;
+    background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+    padding: 1.875em 0 0.625em;
+    overflow: hidden;
+    margin: 3.125rem auto 5.5rem;
+}
+
+.stats .section__inner>.col-2 {
+    width: 100%;
+    float: none;
+    display: table;
+    text-align: center;
+    background: #00b39b;
+    color: #fff;
+    text-shadow: none;
+ 
+}
+
+.stats__header {
+    margin-top: 2em;
+}
+
+.stats__header p {
+    max-width: 415px;
+    font-size: .875em;
+    font-weight: 400;
+    line-height: 1.7142857143;
+}
+
+.stats__header h1 {
+    font-size: 2.125rem;
+    color: #00b39b;
+     font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+}
+
+.stats__header .grid {
+    margin: 0 -10px;
+}
+
+[class*=col-] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+}
+
+.offices {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+        margin-top: 5.5rem;
+    margin-bottom: 5rem;
+}
+
+.offices__header {
+    max-width: 460px;
+    margin: 0 auto 4.1875rem;
+    font-size: .875em;
+    text-align: center;
+        padding-left: 20px;
+    padding-right: 20px;
+       color: #00b39b;
+     font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+}
+
+.offices__header p {
+    line-height: 1.7142857143;
+     color: #747474;;
+}
+
+.offices__slider{
+		display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-left: 72px;
+	margin-right: 72px;
+
+}
+
+.office__desc{
+	text-decoration: none;
+	color: black;
+	margin-left: 40px;
+	color: #747474;
+     font-family: roboto,Arial,sans-serif;
+}
+
+.office{
+		margin-top: 40px;
+}
+
+.btn{
+
+	vertical-align: middle;
+    position: relative;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    padding: 1em 1.5em;
+    background: #3d83df;
+    font-family: Roboto,Arial,sans-serif;
+    line-height: 1em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .04em;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.stubborn{
+	padding-right: 393px;
+}
+
+.join-us__header h1 {
+    font-size: 2.1428571429em;
+    
+    color: #333333;
+     font-family: Work Sans,Arial,sans-serif;
+    margin-bottom: 0.75em;
+}
+
+.join-us__header {
+    max-width: 520px;
+    margin: 0 auto;
+    font-size: .875em;
+    text-align: center;
+}
+
+.main-footer {
+	margin-top: 30px;
+    border-top: 1px solid #eef2f2;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.main-footer .section__inner, .main-footer p {
+    font-size: 12px;
+    color: #ababab;
+        margin-bottom: 0.4em;
+}
+
+.count{
+	color: #3d83df;
+}
+
+.stats__item{
+	background-color: white;
+}
